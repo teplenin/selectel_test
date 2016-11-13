@@ -1,0 +1,27 @@
+a {
+    text-decoration: none !important;
+    border-bottom: 1px solid;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+input[type="text"],
+textarea {
+    &:focus::-webkit-input-placeholder {
+        color: transparent !important;
+    }
+
+    &:focus::-moz-placeholder {
+        color: transparent !important;
+    }
+
+    &:focus:-moz-placeholder {
+        color: transparent !important;
+    }
+
+    &:focus:-ms-input-placeholder {
+        color: transparent !important;
+    }
+}

@@ -1,0 +1,68 @@
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+@mixin nolink {
+    border: none;
+    opacity: 1;
+}
+
+@mixin hover {
+    &:hover {
+        opacity: .7;
+    }
+}
+
+@mixin media($screen) {
+    @if $screen == xs {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $screen == sm {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $screen == md {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if $screen == lg {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+@mixin media-to($media...) {
+    @each $mediatype in $media {
+        @include media($mediatype) {@content;}
+    }
+}

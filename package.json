@@ -1,0 +1,57 @@
+{
+  "name": "quick-project",
+  "version": "1.1.9",
+  "description": "Сборщик проектов на остове TARS с Bootstrap'ом",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "2.2.1",
+    "chokidar": "1.0.1",
+    "del": "1.1.1",
+    "digits": "0.1.4",
+    "handlebars": "^4.0.5",
+    "gulp": "~3.9.0",
+    "gulp-add-src": "0.2.0",
+    "gulp-autoprefixer": "2.1.0",
+    "gulp-cached": "1.0.2",
+    "gulp-changed": "1.1.1",
+    "gulp-combine-media-queries": "0.2.0",
+    "gulp-compile-handlebars": "0.4.4",
+    "gulp-concat": "2.5.2",
+    "gulp-csso": "1.0.0",
+    "gulp-data": "1.2.0",
+    "gulp-if": "1.2.5",
+    "gulp-imagemin": "2.2.0",
+    "gulp-jscs": "1.4.0",
+    "gulp-jshint": "1.9.2",
+    "gulp-minify-html": "1.0.0",
+    "gulp-notify": "2.2.0",
+    "gulp-plumber": "0.6.6",
+    "gulp-rename": "1.2.0",
+    "gulp-replace-task": "0.1.0",
+    "gulp-strip-debug": "1.0.2",
+    "gulp-uglifyjs": "0.6.0",
+    "gulp-util": "3.0.3",
+    "gulp.spritesmith": "3.1.0",
+    "jshint-stylish": "1.0.0",
+    "mkdirp": "0.5.0",
+    "ncp": "2.0.0",
+    "phantomjssmith": "0.6.0",
+    "run-sequence": "1.0.2",
+    "through2": "0.6.3"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "preinstall": "npm install phantomjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/netkam/quick-project.git"
+  },
+  "author": "Dmitry Teplenin",
+  "license": "MIT",
+  "bugs": {},
+  "homepage": "https://bitbucket.org/netkam/quick-project",
+  "keywords": []
+}
